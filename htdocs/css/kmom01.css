@@ -14,3 +14,78 @@
 .rm-navbar-max {
     display: none;
 }
+
+/*******************************************************************/
+
+html {
+    background-color: darkseagreen;
+}
+
+body {
+    background-color: #ebffee;
+}
+
+article {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+a {
+    color: black;
+}
+
+img {
+    border: 1px solid black;
+}
+
+.my-navbar {
+    width: 16.5%;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+.wrap-all {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.site-logo {
+    display: none;
+}
+
+.footer-column {
+    width: 31%;
+    float: left;
+    padding: 5px;
+    border: 1px solid black;
+}
+/*******************************************************************/
+
+.bylineWrapper {
+   position: relative;
+}
+
+.byline {
+   display: inline-block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 15px;
+   bottom: 0;
+}
+
+.bylinePicture {
+   border-radius: 40%;
+   border: 1px solid #000;
+   width: 90px;
+   margin-top: 5px;
+   margin-left: 45px;
+   vertical-align: middle;
+}
+
+.bylineText {
+   width: 200px;
+   padding: 5px;
+   font-size: 12px;
+   float: right;
+   display: block;
+}
