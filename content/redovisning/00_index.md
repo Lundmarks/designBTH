@@ -3,4 +3,5 @@
 Redovisningstexter
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/redovisning/00_index.md`.
+På denna sida kan du hitta mina redovisningstexter kring varje kursmoment.
+Du hittar instruktionerna till varje redovisning på [kurshemsidan](https://dbwebb.se/kurser/design-v2).
