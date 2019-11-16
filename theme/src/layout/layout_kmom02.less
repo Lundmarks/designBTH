@@ -1,0 +1,86 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+
+/**
+ * General layout
+ */
+
+ /*HEADER******************************************************************/
+
+ .my-navbar {
+     font-weight: bold;
+     text-align: center;
+ }
+
+ .rm-max {
+     display: none;
+ }
+
+ .outer-wrap-header {
+     background-color: @bgColorHtml;
+     // overflow: auto; //did not work for me... mixin used instead
+     .clearfix();
+ }
+
+ .inner-wrap-header {
+     max-width: 100%;
+ }
+
+ .region-header-col-1,
+ .region-header-col-3 {
+     width: 20%;
+     float: left;
+ }
+
+ .region-header-col-2 {
+     width: 60%;
+     float: left;
+ }
+
+ .rm-desktop ul li {
+     background-color: rgba(#D6E7B5, 0.95);
+     padding-left: 0.7em;
+     a {
+         border-style: solid;
+         border-color: rgba(#000, 0.45);
+         border-width: 0 1px 1px 1px;
+         float: left;
+     }
+ }
+
+ /*FOOTER******************************************************************/
+
+.outer-wrap-footer {
+     background-color: @bgColorHtmlTintLwr;
+}
+
+.inner-wrap-footer {
+    background-color: @bgColorHtml;
+}
+
+.footer-column-x {
+    text-align: center;
+}
+
+.footer-btm-text {
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*BLOCK******************************************************************/
+
+.block {
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    padding: 5px;
+    margin-top: 3px;
+}
+
+/*OTHER******************************************************************/

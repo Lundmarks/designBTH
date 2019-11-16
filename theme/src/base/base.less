@@ -1,0 +1,42 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+
+ /*******************************************************************/
+
+@bgColorModule: #EBFFEE;
+@bgColorHtml: darkseagreen;
+@bgColorHtmlTintLwr: darkseagreen;
+@bgColorBody: #EBFFEE;
+@colorBody: #333; //textcolor
+@fontFamilyBody: serif;
+
+/*******************************************************************/
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtmlTintLwr;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: @colorBody;
+    background-color: @bgColorBody;
+    font: 100.01%/1 @fontFamilyBody;
+}
+
+article {
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    padding: 3px;
+    margin: 3px;
+}
+
+a {
+    color: @colorBody;
+}
+
+img {
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    max-width: 100%;
+}

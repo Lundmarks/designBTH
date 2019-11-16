@@ -1,0 +1,110 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+
+/**
+  * Main/sidebar
+*/
+/*******************************************************************/
+.region-sidebar-left,
+.region-sidebar-right {
+    width: 30%;
+    float: left;
+}
+
+.region-main {
+    width: 70%;
+    float: left;
+    margin-left: 10%;
+    &.has-sidebar {
+        margin-left: 0;
+    }
+    &.has-sidebar-left.has-sidebar-right {
+        width: 60%;
+        // background-color: pink;
+    }
+}
+
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+    width: 20%;
+}
+
+/*******************************************************************/
+
+
+/**
+ * General layout
+ */
+ /*******************************************************************/
+
+ .inner-wrap {
+     max-width: 800px;
+     margin: 0 auto;
+     background-color: @bgColorModule;
+ }
+
+ .inner-wrap-main {
+     overflow: hidden;
+     //.clearfix();
+     //#design-mixin.clearfix();
+ }
+
+/*******************************************************************/
+
+.footer-column {
+    width: 33%;
+    float: left;
+    //min-height: 150px;
+}
+
+.footer-column-x {
+    min-height: 155px;
+    margin-bottom: 5px;
+}
+
+/*******************************************************************/
+
+.site-logo {
+    display: none;
+}
+
+/*******************************************************************/
+
+.byline {
+   display: inline-block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 15px;
+   bottom: 0;
+}
+
+.bylinePicture {
+   border-radius: 5%;
+   border: 1px solid #000;
+   width: 90px;
+   //margin-top: 5px;
+   //margin-left: 45px;
+   margin: 5px 0 23px 45px;
+   vertical-align: middle;
+}
+
+.bylineText {
+   width: 200px;
+   padding: 5px;
+   font-size: 12px;
+   float: right;
+   display: block;
+}
+
+.bylineWrapper {
+   position: relative;
+}
+
+/*******************************************************************/

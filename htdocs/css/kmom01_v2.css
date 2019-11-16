@@ -1,0 +1,191 @@
+/*!
+ * LESS version of the stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Its intention is to
+ * use kmom01.css and lessify the style and use this as a wrapper for the new
+ * style.
+ */
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+/*!
+ * Stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Fill it with style
+ * to style up the website so it is useable.
+ */
+/*******************************************************************/
+/**
+ * Style for the stylechooser.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+/*******************************************************************/
+/*******************************************************************/
+html {
+  overflow-y: scroll;
+  background-color: darkseagreen;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #EBFFEE;
+  font: 100.01%/1 serif;
+}
+article {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 3px;
+  margin: 3px;
+}
+a {
+  color: #333;
+}
+img {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+}
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Layout for responsive style through media queries.
+ */
+@media screen and (max-width: 1500px) {
+  .site-logo {
+    display: none;
+  }
+}
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Variables
+ */
+/**
+  * Main/sidebar
+*/
+/*******************************************************************/
+.region-sidebar-left,
+.region-sidebar-right {
+  width: 30%;
+  float: left;
+}
+.region-main {
+  width: 70%;
+  float: left;
+  margin-left: 10%;
+}
+.region-main.has-sidebar {
+  margin-left: 0;
+}
+.region-main.has-sidebar-left.has-sidebar-right {
+  width: 60%;
+}
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+  width: 20%;
+}
+/*******************************************************************/
+/**
+ * General layout
+ */
+/*******************************************************************/
+.inner-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #EBFFEE;
+}
+.inner-wrap-main {
+  overflow: hidden;
+}
+/*******************************************************************/
+.footer-column {
+  width: 33%;
+  float: left;
+}
+.footer-column-x {
+  min-height: 155px;
+  margin-bottom: 5px;
+}
+/*******************************************************************/
+.site-logo {
+  display: none;
+}
+/*******************************************************************/
+.byline {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  bottom: 0;
+}
+.bylinePicture {
+  border-radius: 5%;
+  border: 1px solid #000;
+  width: 90px;
+  margin: 5px 0 23px 45px;
+  vertical-align: middle;
+}
+.bylineText {
+  width: 200px;
+  padding: 5px;
+  font-size: 12px;
+  float: right;
+  display: block;
+}
+.bylineWrapper {
+  position: relative;
+}
+/*******************************************************************/
+/**
+ * Show off the regions used in the website, to ease styling.
+ */
+.regions .outer-wrap {
+  background-color: #f4e3c9;
+  border: 1px solid #e3b774;
+}
+.regions .inner-wrap {
+  background-color: #f4e0e9;
+  border: 1px solid #d995b4;
+}
+.regions .region-header-col-1,
+.regions .region-header-col-2,
+.regions .region-header-col-3,
+.regions .region-flash,
+.regions .region-breadcrumb,
+.regions .region-flash-message,
+.regions .region-columns-above,
+.regions .region-main,
+.regions .region-after-main,
+.regions .region-columns-below,
+.regions .region-sidebar-left,
+.regions .region-sidebar-right,
+.regions .region-footer,
+.regions .region-footer-column-1,
+.regions .region-footer-column-2,
+.regions .region-footer-column-3 {
+  background-color: #b5dce1;
+  border: 1px solid #6cbac4;
+  color: #111;
+}
+/**
+ * My own settings, not currently in their own module.
+ */
+/*
+ * The current colortheme used is:
+ * Forest pastels
+ * https://www.schemecolor.com/forest-color.php
+ */
