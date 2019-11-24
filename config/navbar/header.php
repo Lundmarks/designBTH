@@ -49,7 +49,7 @@ return [
             "title" => "Verktyg och möjligheter för utveckling.",
         ],
         [
-            "text" => "Sandbox",
+            "text" => "Test",
             "url" => "test",
             "title" => "Min egna lilla sandlåda för markdown",
         ],
