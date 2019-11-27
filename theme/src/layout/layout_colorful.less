@@ -105,15 +105,12 @@
 
 
 .region-main {
-//    width: 70%;
 #desinax-vgrid.column(@columns - 2);
 #desinax-vgrid.push(1);
-//    float: left;
-//    margin-left: 10%;
-//    overflow: auto;
+
     &.has-sidebar {
+        #desinax-vgrid.column(@columns * 5 / 8);
         #desinax-vgrid.push(0);
-//        margin-left: 0;
     }
 
     &.has-sidebar-right {

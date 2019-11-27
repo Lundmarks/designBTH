@@ -5081,12 +5081,16 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .region-main {
   display: inline;
   float: left;
-  width: 61.45833333%;
+  width: 90.625%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   margin-left: 4.6875%;
 }
 .region-main.has-sidebar {
+  display: inline;
+  float: left;
+  width: 61.45833333%;
+  margin-right: 0.52083333%;
   margin-left: 0.52083333%;
 }
 .region-main.has-sidebar-right {

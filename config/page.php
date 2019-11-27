@@ -22,7 +22,7 @@ return [
                 //"css/kmom01.css",
                 // "css/dbwebb-se.min.css",
                 // "css/kmom03.min.css",
-                "css/04_dark.min.css",
+                "css/04_minimal.min.css",
             ],
             "javascripts" => [
                 "js/responsive-menu.js",
