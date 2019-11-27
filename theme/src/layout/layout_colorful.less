@@ -1,0 +1,316 @@
+/**
+ * Layout/style for the vertical grid.
+ */
+
+/*******************************************************************/
+
+                /**
+                 * Variables
+                 */
+
+ /*******************************************************************/
+
+/*todo*/
+
+/*******************************************************************/
+
+                 /**
+                 * General layout
+                 */
+
+/*******************************************************************/
+
+.row {
+   #desinax-vgrid.row();
+   // background-color: teal;
+   //margin-bottom: 12px;
+   #desinax-vgrid.grid(100%);
+}
+
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+ .inner-wrap {
+     #desinax-vgrid.grid(800px);
+     //     max-width: 800px;
+     //     margin: 0 auto;
+          background-color: @bgColorModule;
+ }
+
+ .inner-wrap-header {
+     #desinax-vgrid.grid(100%);
+ }
+
+ .inner-wrap-footer {
+     // #desinax-vgrid.grid(100%);
+//     #desinax-vgrid.grid(800px);
+    background-color: @bgColorHtml;
+ }
+
+/**
+  * Main/sidebar
+*/
+/*******************************************************************/
+
+/*HEADER******************************************************************/
+
+.my-navbar {
+    font-weight: bold;
+    text-align: center;
+}
+
+.rm-max {
+    display: none;
+}
+
+.outer-wrap-header {
+    // background-color: @bgColorHtml;
+    #desinax-vgrid.grid(100%);
+    // overflow: auto; //did not work for me... mixin used instead
+   .clearfix();
+}
+
+.inner-wrap-header {
+    background-color: @bgColorHtml;
+    //    max-width: 100%;
+    #desinax-vgrid.grid(100%);
+    // .clearfix();
+}
+
+.region-header-col-1,
+.region-header-col-3 {
+    //    width: 20%;
+    #desinax-vgrid.column(4);
+    //    float: left;
+}
+
+.region-header-col-2 {
+    //    width: 60%;
+    #desinax-vgrid.column(16); //5+5+14=24
+    //    float: left;
+}
+
+.rm-desktop ul li {
+    background-color: rgba(#fab1a0, 0.95);
+    //    padding-left: 0.7em;
+    a {
+        //border-style: solid;
+        //border-color: rgba(#000, 0.45);
+        //        border-width: 0 1px 1px 1px;
+        //        float: left;
+    }
+}
+
+
+.region-main {
+//    width: 70%;
+#desinax-vgrid.column(@columns - 2);
+#desinax-vgrid.push(1);
+//    float: left;
+//    margin-left: 10%;
+//    overflow: auto;
+    &.has-sidebar {
+        #desinax-vgrid.push(0);
+//        margin-left: 0;
+    }
+
+    &.has-sidebar-right {
+        #desinax-vgrid.column(@columns * 5 / 8 - 1);
+    }
+
+    &.has-sidebar-left.has-sidebar-right {
+//        width: 60%;
+        // background-color: pink;
+        #desinax-vgrid.column(@columns * 5 / 8 - 5);
+    }
+}
+
+.region-sidebar-left,
+.region-sidebar-right {
+    //    width: 30%;
+    #desinax-vgrid.column(@columns * 3 / 8);
+    //    float: left;
+    margin-top: 22px; //aligns h1 and sidebarblocks
+    // #desinax-vgrid.row(1); //same as above? //not working...
+}
+
+.region-sidebar-right {
+    #desinax-vgrid.push(1);
+}
+
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+    #desinax-vgrid.column(@columns * 3 / 8 - 2);
+}
+
+.region-breadcrumb {
+    #desinax-vgrid.column(@columns);
+}
+
+h4 {
+    border-bottom: 1px solid black;
+}
+
+fieldset {
+    border: none;
+}
+
+/*******************************************************************/
+
+/**
+  * Responsivity with 1, 2, 3 columns
+*/
+
+@media screen and (max-width: 1100px) {
+    .region-main {
+        #desinax-vgrid.column(@columns);
+    }
+
+    .region-sidebar-left {
+        #desinax-vgrid.column(@columns);
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .region-main.has-sidebar-right {
+        #desinax-vgrid.column(@columns);
+    }
+
+    .region-sidebar-right {
+        #desinax-vgrid.column(@columns - 1);
+        #desinax-vgrid.push(1/2);
+        //margin-bottom: 4px;
+    }
+
+    .block {
+        background: rgba(162, 149, 116,0.15);
+        //margin-bottom: 3px;
+        padding: 0 3px 0 3px;
+    }
+
+    &.has-sidebar-left.has-sidebar-right {
+        #desinax-vgrid.column(@columns);
+    }
+
+    .region-main.has-sidebar-left.has-sidebar-right{
+        #desinax-vgrid.column(@columns);
+    }
+}
+
+@media screen and (max-width: 631px) {
+    .rm-max {
+        display: block;
+    }
+}
+
+.rm-submenu-button {
+    padding: 4px 12px;
+    //margin-top: 4px;
+    border-radius: 3px;
+}
+
+/*******************************************************************/
+/**
+ * Reports
+ */
+
+ .next a,
+ .previous a{
+     text-decoration: none;
+     color: #000;
+     opacity: 0.7;
+ }
+
+.next {
+    float: right;
+}
+
+.previous {
+    float: left;
+}
+
+
+.next a:hover,
+.previous a:hover {
+    transition: 0.4s;
+    opacity: 1;
+    background-color: #fab1a0;
+    padding: 1px;
+}
+
+/*******************************************************************/
+
+.footer-column {
+    #desinax-vgrid.column(@columns / 3);
+}
+
+.footer-column-x {
+//    min-height: 155px;
+//    margin-bottom: 5px;
+}
+
+/*******************************************************************/
+
+.site-logo {
+    display: none;
+}
+
+/*******************************************************************/
+
+.byline {
+   display: inline-block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 15px;
+   bottom: 0;
+   #desinax-vgrid.push(0);
+}
+
+.bylinePicture {
+   //border-radius: 2%;
+   //border: 1px solid grey;
+   width: 80px;
+   margin-top: 22px;
+   vertical-align: middle;
+}
+
+.bylineText {
+  width: 200px;
+  padding: 6px 5px 5px 5px;
+  font-size: 12px;
+  float: right;
+  display: block;
+}
+
+/*FOOTER******************************************************************/
+
+.outer-wrap-footer {
+    background-color: @bgColorHtmlTintLwr;
+}
+
+.inner-wrap-footer {
+   background-color: @bgColorHtml;
+}
+
+.footer-column-x {
+   text-align: center;
+}
+
+.footer-btm-text {
+   font-style: italic;
+   font-size: 14px;
+   text-align: center;
+}
+/*OTHER*****************************************************************/
+
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, 800px);
+
+    &.inner-wrap-header {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
