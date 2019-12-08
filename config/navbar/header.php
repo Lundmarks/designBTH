@@ -54,8 +54,18 @@ return [
                         "url" => "rapport/fargschema",
                         "title" => "Rapport skriven under KMOM04.",
                     ],
+                    [
+                        "text" => "Kmom05",
+                        "url" => "rapport/laddningstid",
+                        "title" => "Rapport skriven under KMOM05.",
+                    ],
                 ],
             ],
+        ],
+        [
+            "text" => "Blogg",
+            "url" => "blogg",
+            "title" => "Min blogg, där jag driver ett projekt kallat Dagens Bild.",
         ],
         [
             "text" => "Om",

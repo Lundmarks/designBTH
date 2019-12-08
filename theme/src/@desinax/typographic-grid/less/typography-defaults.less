@@ -1,6 +1,9 @@
 /**
  * Typographic defaults.
  */
+// Magic number and base fontsize
+@magicNumber:  24px;  // 22px
+@fontSizeBody: 16px;
 
 // Default font-families
 @fontFamilyHeadings: "serif";
@@ -71,6 +74,10 @@
      */
     .showGrid(@gridImage) {
         background-image: url("@{gridImage}");
+    }
+
+    .showGridAlt(@gridColor: #f4e3d7) {
+        background-image: repeating-linear-gradient(to bottom, transparent 0px, transparent (@magicNumber - 1), @gridColor (@magicNumber - 1), @gridColor @magicNumber);
     }
 
     .font(@fontSize: 100.01%, @fontFamily: @fontFamilyBody) {
