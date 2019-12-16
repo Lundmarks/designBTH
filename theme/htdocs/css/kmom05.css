@@ -5207,7 +5207,6 @@ fieldset {
 .next a,
 .previous a {
   text-decoration: none;
-  color: #000;
   opacity: 0.7;
 }
 .next {
@@ -5220,7 +5219,6 @@ fieldset {
 .previous a:hover {
   transition: 0.4s;
   opacity: 1;
-  background-color: #fab1a0;
   padding: 1px;
 }
 /*******************************************************************/

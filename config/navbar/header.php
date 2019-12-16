@@ -56,8 +56,23 @@ return [
                     ],
                     [
                         "text" => "Kmom05",
-                        "url" => "rapport/laddningstid",
+                        "url" => "rapport/designprincip",
                         "title" => "Rapport skriven under KMOM05.",
+                    ],
+                    [
+                        "text" => "Kmom06 - Rapport",
+                        "url" => "rapport/designprincip",
+                        "title" => "Rapport skriven under KMOM06.",
+                    ],
+                    [
+                        "text" => "Kmom06 - Element",
+                        "url" => "rapport/designelement",
+                        "title" => "Mindre rapport från KMOM06, kring designelement",
+                    ],
+                    [
+                        "text" => "Kmom06 - Principer",
+                        "url" => "rapport/designprinciper",
+                        "title" => "Mindre rapport från KMOM06, kring designprinciper",
                     ],
                 ],
             ],

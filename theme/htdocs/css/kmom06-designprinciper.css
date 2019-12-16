@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom04.
+ * Stylesheet for design kmom06.
  *
- * This stylesheet is for KMOM04, and is supposed to give a minimalistic feeling.
+ * This stylesheet is for KMOM06, and is mainly created for practicing usage of design-principals.
  */
 /*****************************************************************************/
 /**
@@ -4339,17 +4339,17 @@ template {
 /*******************************************************************/
 html {
   overflow-y: scroll;
-  background-color: #f6e58d;
+  background-color: #185355;
 }
 body {
   margin: 0;
   padding: 0;
-  color: #333;
-  background-color: #7bed9f;
+  color: white;
+  background-color: #185355;
   font: 14px/1.57142857 "sans-serif";
 }
 a {
-  color: #333;
+  color: white;
 }
 img {
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -4377,7 +4377,7 @@ h1 {
   font-size: 2.375em;
   line-height: 1.32330827;
   font-weight: normal;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid black;
   margin-bottom: 21px;
 }
 h1 ~ h1,
@@ -4396,7 +4396,7 @@ h2 {
   line-height: 1.67619048;
   font-weight: normal;
   margin-bottom: 21px;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid black;
 }
 h2 + h3 {
   margin-top: 22px;
@@ -4406,7 +4406,7 @@ h3 {
   line-height: 1.79591837;
   font-weight: normal;
   margin-bottom: 21px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid black;
 }
 h3 + h4 {
   margin-top: 22px;
@@ -4416,7 +4416,7 @@ h4 {
   line-height: 1.04761905;
   font-weight: normal;
   margin-bottom: 21px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid black;
 }
 h4 + h5 {
   margin-top: 22px;
@@ -4425,7 +4425,7 @@ h5 {
   font-size: 1.25em;
   line-height: 1.25714286;
   margin-bottom: 21px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid black;
 }
 h5 + h6 {
   margin-top: 22px;
@@ -4434,7 +4434,7 @@ h6 {
   font-size: 1.25em;
   line-height: 1.25714286;
   margin-bottom: 21px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid black;
 }
 p {
   margin-bottom: 22px;
@@ -4494,7 +4494,7 @@ samp {
   padding-right: 1px;
 }
 code {
-  background-color: pink;
+  background-color: "none";
 }
 pre,
 div.code,
@@ -4518,7 +4518,7 @@ pre code {
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 0.5em;
-  background-color: pink;
+  background-color: "none";
 }
 ul,
 ol {
@@ -4949,6 +4949,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
  * External imports. Grid, for example
  */
+/********************************************************/
 /**
  * Import the vertical grid.
  */
@@ -5017,7 +5018,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   margin-right: auto;
   margin-left: auto;
   max-width: 800px;
-  background-color: #c7ecee;
+  background-color: #24797c;
 }
 .inner-wrap-header {
   margin-right: auto;
@@ -5025,7 +5026,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   max-width: 100%;
 }
 .inner-wrap-footer {
-  background-color: #fab1a0;
+  background-color: #d47f00;
 }
 /**
   * Main/sidebar
@@ -5050,7 +5051,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   clear: both;
 }
 .inner-wrap-header {
-  background-color: #fab1a0;
+  background-color: #d47f00;
   margin-right: auto;
   margin-left: auto;
   max-width: 100%;
@@ -5255,10 +5256,10 @@ fieldset {
 }
 /*FOOTER******************************************************************/
 .outer-wrap-footer {
-  background-color: #f6e58d;
+  background-color: #185355;
 }
 .inner-wrap-footer {
-  background-color: #fab1a0;
+  background-color: #d47f00;
 }
 .footer-column-x {
   text-align: center;
@@ -5326,14 +5327,151 @@ fieldset {
 .hgrid .inner-wrap {
   background-image: url("../img/magic-number-22px.png");
 }
+/********************************************************/
+/**
+  * Figure/figcaption for images and media using figure/figcaption
+  */
+/**
+ * Figure with ASCIINEMA
+ */
+/**
+ * Figure with Codepen
+ */
+/** --------------------------------------------------------------
+ * Figure through .figure
+ */
 /*****************************************************************************/
 /**
  * My own settings, not currently in their own module.
  */
-/*****************************************************************************/
+/********************************************************/
+figure.figure,
+figure.asciinema,
+figure.codepen,
+figure.figure-codepen {
+  display: table;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 22px;
+  /* Chrome shinks images in td */
+  /* Position the images */
+}
+figure.figure img {
+  max-width: 100%;
+  display: block;
+}
+figure.figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 11px;
+}
+figure.figure figcaption p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+figure.figure td img {
+  max-width: none;
+}
+figure.figure.center {
+  clear: both;
+  margin: auto;
+}
+figure.figure.center figcaption {
+  text-align: center;
+}
+figure.figure.left {
+  float: left;
+  margin-right: 0.5em;
+}
+figure.figure.right {
+  float: right;
+  margin-left: 0.5em;
+}
+@media screen and (max-width: 963px) {
+  figure.figure.left.w67,
+  figure.figure.right.w67 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w67 img,
+  figure.figure.right.w67 img {
+    width: 962.5px;
+  }
+}
+@media screen and (max-width: 733px) {
+  figure.figure.left.w50,
+  figure.figure.right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w50 img,
+  figure.figure.right.w50 img {
+    width: 733.33333333px;
+  }
+}
+@media screen and (max-width: 688px) {
+  figure.figure.left.w40,
+  figure.figure.right.w40 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w40 img,
+  figure.figure.right.w40 img {
+    width: 687.5px;
+  }
+}
+@media screen and (max-width: 550px) {
+  figure.figure.left.w33,
+  figure.figure.right.w33 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w33 img,
+  figure.figure.right.w33 img {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 367px) {
+  figure.figure.left.w25,
+  figure.figure.right.w25 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w25 img,
+  figure.figure.right.w25 img {
+    width: 366.66666667px;
+  }
+}
+figure.asciinema {
+  display: block;
+}
+figure.asciinema figcaption {
+  display: block;
+}
+figure.asciinema .asciicast {
+  margin: 0 !important;
+}
+figure.codepen,
+figure.figure-codepen {
+  width: 100%;
+}
+/********************************************************/
 /*
          * The current colortheme used is:
          * Forest pastels
          * https://www.schemecolor.com/forest-color.php
          */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-shadow: 3px 3px 3px #0d2f30;
+}
 /*****************************************************************************/
